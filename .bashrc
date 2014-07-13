@@ -12,8 +12,6 @@ PATH="/usr/local/sbin:$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="~/bin:$PATH"
 
-# MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
 #
 # git
 #

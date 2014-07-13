@@ -32,4 +32,3 @@ set focuscontent
 " ブックマーク検索
 noremap <C-o> :open<Space>*<Space>
 noremap <C-t> :tabopen<Space>*<Space>
-

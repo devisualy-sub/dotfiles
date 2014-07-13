@@ -1,29 +1,5 @@
 "
-" plugin 管理
-"     https://github.com/gmarik/vundle
-" 補完
-"     https://github.com/Shougo/neocomplcache
-" color scheme
-"     git clone git://github.com/altercation/vim-colors-solarized.git
-"
-
-" plugin vundle
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-
-" plugin solarized
-Bundle 'altercation/vim-colors-solarized'
-set background=dark
-colorscheme solarized
-
-" plugin neocomplacache
-Bundle 'Shougo/neocomplcache'
-let g:neocomplcache_enable_at_startup = 1
-
-"
-" 動作
+" 挙動の定義
 "
 
 " vi との互換モードを無効にする
@@ -53,7 +29,7 @@ noremap <C-e> $
 set bs=start
 
 "
-" 表示
+" 表示の定義
 "
 
 " 構文によって色づけする
@@ -79,4 +55,3 @@ set ambiwidth=double
 " 改行
 "
 set fileformat=unix
-
