@@ -1,0 +1,35 @@
+
+" スクロール幅
+noremap j 25<C-e>
+noremap k 25<C-y>
+
+" ページ遷移
+map h <A-Left>
+map l <A-Right>
+
+" カラースキーム
+colorscheme solarized
+
+" ヒントを英字で表示するように変更
+set hintchars=fghijkno
+
+" 特定サイトでのキー除外
+:ignorekeys add feedly\\.com -except :,o,t,<C-o>,<C-t>
+
+" ソースコード表示を無効にする
+noremap gf <nop>
+
+" ヘルプの表示を無効にする
+noremap <F1> <nop>
+
+" GUI を必要なものだけに絞る
+set gui=none
+set gui=tabs,navigation
+
+" ページロード時にフォームにフォーカスを渡すのを防ぐ
+set focuscontent
+
+" ブックマーク検索
+noremap <C-o> :open<Space>*<Space>
+noremap <C-t> :tabopen<Space>*<Space>
+

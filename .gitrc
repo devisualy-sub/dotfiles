@@ -1,0 +1,18 @@
+[alias]
+	graph = log --graph --oneline
+
+[color]
+	ui = auto
+
+[diff]
+	tool = opendiff
+
+[difftool]
+	prompt = false
+
+[difftool "opendiff"]
+	path = /usr/bin/opendiff
+	cmd = "/usr/bin/opendiff \"$LOCAL\" \"$REMOTE\""
+	trustExitCode = false
+
+
