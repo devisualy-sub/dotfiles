@@ -1,0 +1,24 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"font_size": 20,
+	"line_numbers": true,
+	"trim_automatic_white_space": true,
+	"word_wrap": "auto",
+	//括弧の自動補完
+	"auto_match_enabled": false,
+	"highlight_line": true,
+	"match_brackets": true,
+	"match_brackets_content": false,
+	"match_selection": true,
+	"draw_white_space": "all",
+	"trim_trailing_white_space_on_save": true,
+	"ensure_newline_at_eof_on_save": true,
+	"default_encoding": "UTF-8",
+	"default_line_ending": "system",
+	"show_tab_close_buttons": false,
+	"use_simple_full_screen": true,
+	"remember_open_files": true,
+	"close_windows_when_empty": false,
+	"show_full_path": true,
+	"tab_size": 2
+}
