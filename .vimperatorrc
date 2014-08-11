@@ -60,8 +60,8 @@ map <F1> <nop>
 noremap <F1> <nop>
 
 " アドレスバーをトグル表示する
-noremap i :set gui=invnavigation<CR>
-noremap <C-i> :set gui=invnavigation<CR>
+noremap u :set gui=invnavigation<CR>
+noremap <C-u> :set gui=invnavigation<CR>
 
 " ブックマーク検索
 noremap <C-o> :open<Space>*<Space>
@@ -77,8 +77,9 @@ nmap <M-f> /
 map <BS> <NOP>
 
 " バッファを表示する
-noremap <C-j> b
-noremap <C-k> b
+noremap <C-i> b
+noremap <C-j> b<Tab>
+noremap <C-k> b<S-Tab>
 
 " タブを閉じる
 noremap w d
@@ -92,7 +93,6 @@ cnoremap <C-j> <Tab>
 cnoremap <C-o> <Enter>
 
 " エスケープキーが遠いので左手近辺に置く
-noremap <C-Tab> b
 cnoremap <C-Tab> <ESC>
 
 " なにがなんでもエンターキーはエンターキー
