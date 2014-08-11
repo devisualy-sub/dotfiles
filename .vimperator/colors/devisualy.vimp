@@ -1,0 +1,29 @@
+" ステータスバー自体
+hi Normal color: #93a1a1; background: #002b36; font-size: 20pt;
+hi InfoMsg color:  #93a1a1; background: #002b36; font-size: 20pt;
+hi ModeMsg color:  #93a1a1; background: #002b36; font-size: 20pt;
+hi MoreMsg color:  #93a1a1; background: #002b36; font-size: 20pt;
+hi Question color: #93a1a1; background: #002b36; font-size: 20pt;
+hi WarningMsg color: #93a1a1; background: #002b36; font-size: 20pt;
+hi ErrorMsg color: #93a1a1; background: 002b36; font-size: 20pt;
+
+" コマンドバー
+hi CmdLine color: #93a1a1; background: #002b36; font-size: 20pt;
+
+" ステータスバー
+hi StatusLine color: #93a1a1; background: #002b36; font-size: 20pt;
+
+" ヒント
+hi Hint font-family: monospace; font-size: 15px; font-weight: normal; color: #dc322f; background-color: #002b36; border-color: #839496; border-" width: 0px; border-style: solid; padding: 0px 5px 0px 5px; text-transform: uppercase;
+hi HintElem background-color: #073642; color: #b58900;
+hi HintActive background-color: #dc322f; color: #073642;
+hi -append Hint background-color: rgba(253, 246, 227, 0.7); border: 1px solid #fdf6e3; -moz-border-radius: 4px; -moz-box-shadow: 0px 0px " 1px black;
+hi -append HintElem text-decoration: none; -moz-border-radius: 4px; -moz-box-shadow: 0 0 2px #002b36;
+hi -append HintActive text-decoration: none; -moz-border-radius: 4px; -moz-box-shadow: 0 0 2px #002b36;
+
+" 候補
+hi CompTitle background: #1c1c1c;
+hi CompTitle>*  color: #cb4b16; border-bottom: 1px solid #3c3c3f; padding: 1px 0.5ex;
+hi CompItem[selected] color: cyan;  background: #333;
+hi CompDesc color: #d33682;
+

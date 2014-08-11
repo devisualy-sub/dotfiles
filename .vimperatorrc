@@ -1,34 +1,109 @@
+" ===============================================
+" 基本動作の設定
+" ===============================================
+
+" オートコンプリート設定を firefox のロケーションバーと同じ設定にする
+set complete=l
+
+" ステータスバーにページタイトル表示
+set status=location
+
+" コマンドラインに操作が移ったら半角にする
+style -name commandline-ime chrome://* #liberator-commandline-command input {ime-mode: inactive;}
+
+" カラースキーム
+colorscheme devisualy
+
+" ステータスバーにリンクの飛び先を表示する
+set showstatuslinks=0
+
+" ヒントを英字のみで表示するように変更
+set hintchars=fghijkno
+
+" GUI を必要なものだけに絞る
+set gui=none
+
+" ページロード時にフォームにフォーカスを渡すのを防ぐ
+set focuscontent
+
+" 検索で大文字小文字を区別しない
+set ignorecase
+
+" ソースコード表示を無効にする
+noremap gf <nop>
+
+" ===============================================
+" キーバインド
+" ===============================================
+
+" ダウンロードウィンドウ表示
+noremap <M-d> <M-j>
 
 " スクロール幅
 noremap j 25<C-e>
 noremap k 25<C-y>
 
+" 検索ショートカット
+noremap s :open<Space>g<Space>
+noremap <C-s> :t<Space>g<Space>
+
 " ページ遷移
-map h <A-Left>
-map l <A-Right>
+noremap h <A-Left>
+noremap l <A-Right>
 
-" カラースキーム
-colorscheme solarized
-
-" ヒントを英字で表示するように変更
-set hintchars=fghijkno
-
-" 特定サイトでのキー除外
-:ignorekeys add feedly\\.com -except :,o,t,<C-o>,<C-t>
-
-" ソースコード表示を無効にする
-noremap gf <nop>
+" タブ移動
+noremap <M-j> gt
+noremap <M-k> gT
 
 " ヘルプの表示を無効にする
+map <F1> <nop>
 noremap <F1> <nop>
 
-" GUI を必要なものだけに絞る
-set gui=none
-set gui=tabs,navigation
-
-" ページロード時にフォームにフォーカスを渡すのを防ぐ
-set focuscontent
+" アドレスバーをトグル表示する
+noremap i :set gui=invnavigation<CR>
+noremap <C-i> :set gui=invnavigation<CR>
 
 " ブックマーク検索
 noremap <C-o> :open<Space>*<Space>
 noremap <C-t> :tabopen<Space>*<Space>
+
+" ブックマークに追加するのを禁止
+map a <NOP>
+
+" 通常の検索を無効にして vimp の検索を呼ぶ
+nmap <M-f> /
+
+" BackSpaceで戻らないようにする
+map <BS> <NOP>
+
+" バッファを表示する
+noremap <C-j> b
+noremap <C-k> b
+
+" タブを閉じる
+noremap w d
+noremap <M-w> <NOP>
+
+" 補完候補を上下キーでも選択できるようにする
+cnoremap <C-k> <S-Tab>
+cnoremap <C-j> <Tab>
+
+" エンターキーが遠いので右手近辺に置く
+cnoremap <C-o> <Enter>
+
+" エスケープキーが遠いので左手近辺に置く
+noremap <C-Tab> b
+cnoremap <C-Tab> <ESC>
+
+" なにがなんでもエンターキーはエンターキー
+cnoremap <C-Enter> <Enter>
+
+" 設定を再読み込みする
+noremap ,s :source<Space>~/.vimperatorrc<CR>
+
+" ===============================================
+" 除外設定
+" ===============================================
+
+" 特定サイト(feedly)でのキー除外
+:ignorekeys add feedly\\.com -except :,w,d,o,<C-o>,t,<C-t>,s,<C-s>,i,<C-i>,<C-j>,<C-k>,b,<M-j>,<M-k>,gt,gT,g
