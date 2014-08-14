@@ -52,8 +52,8 @@ noremap h <A-Left>
 noremap l <A-Right>
 
 " タブ移動
-noremap <M-j> gt
-noremap <M-k> gT
+noremap <C-j> gt
+noremap <C-k> gT
 
 " ヘルプの表示を無効にする
 map <F1> <nop>
@@ -79,14 +79,13 @@ map <BS> <NOP>
 " バッファを表示する
 noremap <C-Tab> b
 noremap <C-i> b
-noremap <C-j> b<Tab>
-noremap <C-k> b<S-Tab>
 
 " タブを閉じる
 noremap w d
-noremap <M-w> <NOP>
+noremap <C-w> d
+noremap <M-w> d
 
-" 補完候補を上下キーでも選択できるようにする
+" 補完候補を j,k キーでも選択できるようにする
 cnoremap <C-k> <S-Tab>
 cnoremap <C-j> <Tab>
 
@@ -107,4 +106,4 @@ noremap ,s :source<Space>~/.vimperatorrc<CR>
 " ===============================================
 
 " 特定サイト(feedly)でのキー除外
-:ignorekeys add feedly\\.com -except :,w,d,o,<C-o>,t,<C-t>,s,<C-s>,i,<C-i>,<C-j>,<C-k>,b,<M-j>,<M-k>,gt,gT,g,<M-f>,/
+:ignorekeys add feedly\\.com -except :,w,<C-w>,<M-d>,d,o,<C-o>,t,<C-t>,s,<C-s>,i,<C-i>,b,<C-j>,<C-k>,gt,gT,g,<M-f>,/
