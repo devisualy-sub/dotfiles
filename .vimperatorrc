@@ -95,6 +95,12 @@ cnoremap <C-o> <Enter>
 " エスケープキーが遠いので左手近辺に置く
 cnoremap <C-Tab> <ESC>
 
+" IGNORE 無効
+noremap i <NOP>
+
+" RECORDING 無効
+noremap q <NOP>
+
 " なにがなんでもエンターキーはエンターキー
 cnoremap <C-Enter> <Enter>
 
