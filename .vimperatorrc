@@ -8,7 +8,7 @@ set suggestengines=g
 " 表示桁を10個にする
 set maxitems=10
 
-" オートコンプリート設定を firefox のロケーションバーと同じ設定にする
+" オートコンプリートのデフォルト設定をタブと検索サジェストにする
 set complete=tS
 
 " ステータスバーにページタイトル表示
@@ -67,16 +67,21 @@ noremap <F1> <nop>
 
 " アドレスバーをトグル表示する
 noremap u :set gui=invnavigation<CR>
-noremap <C-u> :set gui=invnavigation<CR>
+noremap <C-u> <ESC>:set gui=invnavigation<CR>
+cnoremap <C-u> <ESC>:set gui=invnavigation<CR>
+inoremap <C-u> <ESC>:set gui=invnavigation<CR>
 
-
-" ウィンドウ操作する際にタブを表示する
-noremap o :set<Space>complete=tS<CR>:open<Space>
-noremap t :tabopen<Space>
+" ウィンドウ操作する際にタブと検索サジェストを表示する
+noremap o <ESC>:set<Space>complete=tS<CR>:open<Space>
+noremap t <ESC>:set<Space>complete=tS<CR>:tabopen<Space>
 
 " ブックマークを操作するだけのウィンドウ操作も用意する
-noremap <C-o> :set<Space>complete=l<CR>:open<Space>*<Space>
-noremap <C-t> :tabopen<Space>*<Space>
+noremap <C-o> <ESC>:set<Space>complete=l<CR>:open<Space>*<Space>
+noremap <C-t> <ESC>:set<Space>complete=l<CR>:tabopen<Space>*<Space>
+cnoremap <C-o> <ESC>:set<Space>complete=l<CR>:open<Space>*<Space>
+cnoremap <C-t> <ESC>:set<Space>complete=l<CR>:tabopen<Space>*<Space>
+inoremap <C-o> <ESC>:set<Space>complete=l<CR>:open<Space>*<Space>
+inoremap <C-t> <ESC>:set<Space>complete=l<CR>:tabopen<Space>*<Space>
 
 " ブックマークに追加するのを禁止
 noremap a <NOP>
@@ -96,9 +101,6 @@ noremap w <NOP>
 " 補完候補を j,k キーでも選択できるようにする
 cnoremap <C-k> <S-Tab>
 cnoremap <C-j> <Tab>
-
-" エンターキーが遠いので右手近辺に置く
-cnoremap <C-o> <Enter>
 
 " エスケープキーが遠いので左手近辺に置く
 noremap <C-Tab> <ESC>
