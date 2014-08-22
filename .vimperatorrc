@@ -2,8 +2,14 @@
 " 基本動作の設定
 " ===============================================
 
+" 検索エンジンを Google に設定する
+set suggestengines=g
+
+" 表示桁を10個にする
+set maxitems=10
+
 " オートコンプリート設定を firefox のロケーションバーと同じ設定にする
-set complete=l
+set complete=tS
 
 " ステータスバーにページタイトル表示
 set status=location
@@ -18,7 +24,7 @@ colorscheme devisualy
 set showstatuslinks=0
 
 " ヒントを英字のみで表示するように変更
-set hintchars=fghijkno
+set hintchars=wefjio
 
 " GUI を必要なものだけに絞る
 set gui=none
@@ -29,12 +35,12 @@ set focuscontent
 " 検索で大文字小文字を区別しない
 set ignorecase
 
-" ソースコード表示を無効にする
-noremap gf <nop>
-
 " ===============================================
 " キーバインド
 " ===============================================
+
+" ソースコード表示を無効にする
+noremap gf <nop>
 
 " ダウンロードウィンドウ表示
 noremap <M-d> <M-j>
@@ -63,27 +69,29 @@ noremap <F1> <nop>
 noremap u :set gui=invnavigation<CR>
 noremap <C-u> :set gui=invnavigation<CR>
 
-" ブックマーク検索
-noremap <C-o> :open<Space>*<Space>
+
+" ウィンドウ操作する際にタブを表示する
+noremap o :set<Space>complete=tS<CR>:open<Space>
+noremap t :tabopen<Space>
+
+" ブックマークを操作するだけのウィンドウ操作も用意する
+noremap <C-o> :set<Space>complete=l<CR>:open<Space>*<Space>
 noremap <C-t> :tabopen<Space>*<Space>
 
 " ブックマークに追加するのを禁止
-map a <NOP>
+noremap a <NOP>
 
 " 通常の検索を無効にして vimp の検索を呼ぶ
-nmap <M-f> /
+noremap <M-f> /
+cnoremap <M-f> <NOP>
 
 " BackSpaceで戻らないようにする
 map <BS> <NOP>
 
-" バッファを表示する
-noremap <C-Tab> b
-noremap <C-i> b
-
 " タブを閉じる
-noremap w d
-noremap <C-w> d
-noremap <M-w> d
+noremap <C-w> <M-w>
+noremap d <NOP>
+noremap w <NOP>
 
 " 補完候補を j,k キーでも選択できるようにする
 cnoremap <C-k> <S-Tab>
@@ -93,7 +101,9 @@ cnoremap <C-j> <Tab>
 cnoremap <C-o> <Enter>
 
 " エスケープキーが遠いので左手近辺に置く
+noremap <C-Tab> <ESC>
 cnoremap <C-Tab> <ESC>
+inoremap <C-Tab> <ESC>
 
 " IGNORE 無効
 noremap i <NOP>
