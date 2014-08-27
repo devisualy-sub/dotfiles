@@ -49,10 +49,6 @@ noremap <M-d> <M-j>
 noremap j 25<C-e>
 noremap k 25<C-y>
 
-" 検索ショートカット
-noremap s :open<Space>g<Space>
-noremap <C-s> :t<Space>g<Space>
-
 " ページ遷移
 noremap h <A-Left>
 noremap l <A-Right>
@@ -124,4 +120,4 @@ noremap ,s :source<Space>~/.vimperatorrc<CR>
 " ===============================================
 
 " 特定サイト(feedly)でのキー除外
-:ignorekeys add feedly\\.com -except :,w,<C-w>,<M-d>,d,o,<C-o>,t,<C-t>,s,<C-s>,i,<C-i>,b,<C-j>,<C-k>,gt,gT,g,<M-f>,/
+:ignorekeys add feedly\\.com -except :,w,<C-w>,<M-d>,d,o,<C-o>,t,<C-t>,s,<C-s>,i,<C-i>,b,<C-j>,<C-k>,gt,gT,g,<M-f>,/,u,<C-u>

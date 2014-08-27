@@ -10,7 +10,8 @@
       <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::COMMAND_R, KeyCode::VK_MOUSEKEY_UP</autogen>
       <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::COMMAND_R, KeyCode::VK_MOUSEKEY_RIGHT</autogen>
       <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::COMMAND_R, PointingButton::LEFT</autogen>
-      <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::COMMAND_R, PointingButton::RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::COMMAND_R, PointingButton::LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::COMMAND_R, PointingButton::RIGHT</autogen>
     </item>
     </item>
 </root>
