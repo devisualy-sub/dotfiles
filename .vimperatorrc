@@ -66,10 +66,10 @@ map <F1> <nop>
 noremap <F1> <nop>
 
 " アドレスバーをトグル表示する
-noremap u :set gui=invnavigation<CR>
-noremap <C-u> <ESC>:set gui=invnavigation<CR>
-cnoremap <C-u> <ESC>:set gui=invnavigation<CR>
-inoremap <C-u> <ESC>:set gui=invnavigation<CR>
+noremap u :set<Space>gui=invnavigation<CR>
+noremap <C-u> <ESC>:set<Space>gui=invnavigation<CR>
+cnoremap <C-u> <ESC>:set<Space>gui=invnavigation<CR>
+inoremap <C-u> <ESC>:set<Space>gui=invnavigation<CR>
 
 " ウィンドウ操作する際にタブと検索サジェストを表示する
 noremap o <ESC>:set<Space>complete=tS<CR>:open<Space>

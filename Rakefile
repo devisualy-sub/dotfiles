@@ -1,6 +1,6 @@
 
 desc 'setup'
-task :setup => [:create_directories_on_home, :create_symlinks_on_home, :create_symlinks_on_subl, :vimperator]
+task :setup => [:create_directories_on_home, :create_symlinks_on_home, :create_symlinks_on_subl, :vimperator, :karabiner]
 
 CURRENT_DIRECTORY = Dir.getwd
 
@@ -30,4 +30,9 @@ end
 desc 'vimperator'
 task :vimperator do
   sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.vimperator/colors/ $HOME/.vimperator/colors"
+end
+
+desc 'karabiner'
+task :karabiner do
+  sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.karabiner/private.xml $HOME/Library/Application\\ Support/Karabiner/private.xml"
 end

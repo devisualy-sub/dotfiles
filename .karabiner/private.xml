@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Devisualy</name>
+    <item>
+      <name>mouse</name>
+      <identifier>private.devisualy_mouse</identifier>
+      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::COMMAND_R, KeyCode::VK_MOUSEKEY_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::COMMAND_R, KeyCode::VK_MOUSEKEY_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::COMMAND_R, KeyCode::VK_MOUSEKEY_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::COMMAND_R, KeyCode::VK_MOUSEKEY_RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::COMMAND_R, PointingButton::LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::COMMAND_R, PointingButton::RIGHT</autogen>
+    </item>
+    </item>
+</root>
