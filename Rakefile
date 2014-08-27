@@ -1,6 +1,7 @@
 
-desc 'setup'
-task :setup => [:create_directories_on_home, :create_symlinks_on_home, :create_symlinks_on_subl, :vimperator, :karabiner]
+desc 'all'
+task :all => [:create_directories_on_home, :create_symlinks_on_home,
+  :create_symlinks_on_subl, :vimperator, :karabiner]
 
 CURRENT_DIRECTORY = Dir.getwd
 
@@ -14,7 +15,7 @@ end
 
 desc 'create symlinks on home'
 task :create_symlinks_on_home do
-  dotfiles = ['.bashrc', '.gitrc', '.vimperatorrc', '.vimrc']
+  dotfiles = ['.bashrc', '.gitconfig', '.vimperatorrc', '.vimrc']
   dotfiles.each do |dotfile|
     path = File.join(CURRENT_DIRECTORY, dotfile)
     sh "/bin/ln -sf #{path} $HOME/"
