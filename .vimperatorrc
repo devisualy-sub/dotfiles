@@ -62,7 +62,6 @@ map <F1> <nop>
 noremap <F1> <nop>
 
 " アドレスバーをトグル表示する
-noremap u :set<Space>gui=invnavigation<CR>
 noremap <C-u> <ESC>:set<Space>gui=invnavigation<CR>
 cnoremap <C-u> <ESC>:set<Space>gui=invnavigation<CR>
 inoremap <C-u> <ESC>:set<Space>gui=invnavigation<CR>
@@ -90,7 +89,12 @@ cnoremap <M-f> <NOP>
 map <BS> <NOP>
 
 " タブを閉じる
-noremap <C-w> <M-w>
+noremap <C-w> <ESC>d
+noremap <M-w> <ESC>d
+coremap <C-w> <ESC>d
+coremap <M-w> <ESC>d
+ioremap <C-w> <ESC>d
+ioremap <M-w> <ESC>d
 noremap d <NOP>
 noremap w <NOP>
 
@@ -120,4 +124,4 @@ noremap ,s :source<Space>~/.vimperatorrc<CR>
 " ===============================================
 
 " 特定サイト(feedly)でのキー除外
-:ignorekeys add feedly\\.com -except :,w,<C-w>,<M-d>,d,o,<C-o>,t,<C-t>,s,<C-s>,i,<C-i>,b,<C-j>,<C-k>,gt,gT,g,<M-f>,/,u,<C-u>
+:ignorekeys add feedly\\.com -except :,w,<C-w>,<M-w>,d,o,<C-o>,t,<C-t>,s,<C-s>,i,<C-i>,b,<C-j>,<C-k>,gt,gT,g,<M-f>,/,u,<C-u>
