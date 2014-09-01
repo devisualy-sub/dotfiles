@@ -49,13 +49,9 @@ noremap <M-d> <M-j>
 noremap j 25<C-e>
 noremap k 25<C-y>
 
-" ページ遷移
-noremap h <A-Left>
-noremap l <A-Right>
-
 " タブ移動
-noremap <C-j> gt
-noremap <C-k> gT
+noremap h gt
+noremap l gT
 
 " ヘルプの表示を無効にする
 map <F1> <nop>
