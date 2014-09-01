@@ -81,9 +81,6 @@ noremap a <NOP>
 noremap <M-f> /
 cnoremap <M-f> <NOP>
 
-" BackSpaceで戻らないようにする
-map <BS> <NOP>
-
 " タブを閉じる
 noremap <C-w> <ESC>d
 noremap <M-w> <ESC>d
@@ -120,4 +117,4 @@ noremap ,s :source<Space>~/.vimperatorrc<CR>
 " ===============================================
 
 " 特定サイト(feedly)でのキー除外
-:ignorekeys add feedly\\.com -except :,w,<C-w>,<M-w>,d,o,<C-o>,t,<C-t>,s,<C-s>,i,<C-i>,b,<C-j>,<C-k>,gt,gT,g,<M-f>,/,u,<C-u>
+:ignorekeys add feedly\\.com -except :,<C-w>,<M-w>,d,o,<C-o>,t,<C-t>,s,<C-s>,i,<C-i>,b,<C-j>,<C-k>,gt,gT,g,<M-f>,/,u,<C-u>
