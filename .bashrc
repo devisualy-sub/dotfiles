@@ -12,6 +12,7 @@ PATH="/usr/local/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="~/bin:$PATH"
+PATH="$HOME/.rbenv/shims:$PATH"
 
 #
 # git
