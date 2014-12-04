@@ -27,7 +27,7 @@ set showstatuslinks=0
 set hintchars=wefjio
 
 " GUI を必要なものだけに絞る
-set gui=none
+set gui=none,tabs
 
 " ページロード時にフォームにフォーカスを渡すのを防ぐ
 set focuscontent
@@ -61,22 +61,24 @@ noremap <C-k> gT
 map <F1> <nop>
 noremap <F1> <nop>
 
-" アドレスバーをトグル表示する
+" タブとアドレスバーをトグル表示する
+noremap <C-t> <ESC>:set<Space>gui=invtabs<CR>
+cnoremap <C-t> <ESC>:set<Space>gui=invtabs<CR>
+inoremap <C-t> <ESC>:set<Space>gui=invtabs<CR>
+
+" タブとアドレスバーをトグル表示する
 noremap <C-u> <ESC>:set<Space>gui=invnavigation<CR>
 cnoremap <C-u> <ESC>:set<Space>gui=invnavigation<CR>
 inoremap <C-u> <ESC>:set<Space>gui=invnavigation<CR>
 
 " ウィンドウ操作する際にタブと検索サジェストを表示する
-noremap o <ESC>:set<Space>complete=tS<CR>:open<Space>
-noremap t <ESC>:set<Space>complete=tS<CR>:tabopen<Space>
+noremap g <ESC>:set<Space>complete=S<CR>:open<Space>
+noremap o <ESC>:set<Space>complete=S<CR>:open<Space>
 
 " ブックマークを操作するだけのウィンドウ操作も用意する
 noremap <C-o> <ESC>:set<Space>complete=l<CR>:open<Space>*<Space>
-noremap <C-t> <ESC>:set<Space>complete=l<CR>:tabopen<Space>*<Space>
 cnoremap <C-o> <ESC>:set<Space>complete=l<CR>:open<Space>*<Space>
-cnoremap <C-t> <ESC>:set<Space>complete=l<CR>:tabopen<Space>*<Space>
 inoremap <C-o> <ESC>:set<Space>complete=l<CR>:open<Space>*<Space>
-inoremap <C-t> <ESC>:set<Space>complete=l<CR>:tabopen<Space>*<Space>
 
 " ブックマークに追加するのを禁止
 noremap a <NOP>
@@ -90,8 +92,6 @@ noremap <C-w> <ESC>d
 noremap <M-w> <ESC>d
 coremap <C-w> <ESC>d
 coremap <M-w> <ESC>d
-ioremap <C-w> <ESC>d
-ioremap <M-w> <ESC>d
 noremap d <NOP>
 noremap w <NOP>
 
