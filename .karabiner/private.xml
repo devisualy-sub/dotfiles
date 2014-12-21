@@ -1,17 +1,39 @@
 <?xml version="1.0"?>
 <root>
   <item>
-    <name>Devisualy</name>
+    <name>Devisualy Chrome</name>
     <item>
-      <name>mouse</name>
-      <identifier>private.devisualy_mouse</identifier>
-      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::CONTROL_L, KeyCode::VK_MOUSEKEY_LEFT</autogen>
-      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::CONTROL_L, KeyCode::VK_MOUSEKEY_DOWN</autogen>
-      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::CONTROL_L, KeyCode::VK_MOUSEKEY_UP</autogen>
-      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::CONTROL_L, KeyCode::VK_MOUSEKEY_RIGHT</autogen>
-      <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::CONTROL_L, PointingButton::LEFT</autogen>
-      <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::CONTROL_L, PointingButton::LEFT</autogen>
-      <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::CONTROL_L, PointingButton::RIGHT</autogen>
+      <name>disable new window</name>
+      <only>GOOGLE_CHROME</only>
+      <identifier>private.devisualy.chrome.disable_new_window</identifier>
+      <autogen>__KeyToKey__ , KeyCode::N, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
     </item>
+    <item>
+      <name>move tab</name>
+      <only>GOOGLE_CHROME</only>
+      <identifier>private.devisualy.chrome.move_tab</identifier>
+      <autogen>__KeyToKey__ , KeyCode::I, ModifierFlag::CONTROL_L, KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ , KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
     </item>
+    <item>
+      <name>move history</name>
+      <only>GOOGLE_CHROME</only>
+      <identifier>private.devisualy.chrome.move_history</identifier>
+      <autogen>__KeyToKey__ , KeyCode::H, ModifierFlag::CONTROL_L, KeyCode::DELETE</autogen>
+      <autogen>__KeyToKey__ , KeyCode::L, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::SHIFT_L</autogen>
+    </item>
+    <item>
+      <name>move page</name>
+      <only>GOOGLE_CHROME</only>
+      <identifier>private.devisualy.chrome.move_page</identifier>
+      <autogen>__KeyToKey__ , KeyCode::J, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN, ModifierFlag::FN</autogen>
+      <autogen>__KeyToKey__ , KeyCode::K, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP, ModifierFlag::FN</autogen>
+    </item>
+    <item>
+      <name>focus addressbar</name>
+      <only>GOOGLE_CHROME</only>
+      <identifier>private.devisualy.chrome.focus_addressbar</identifier>
+      <autogen>__KeyToKey__ , KeyCode::U, ModifierFlag::CONTROL_L, KeyCode::L, ModifierFlag::COMMAND_L</autogen>
+    </item>
+  </item>
 </root>
