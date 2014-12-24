@@ -9,6 +9,12 @@
       <autogen>__KeyToKey__ , KeyCode::N, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
     </item>
     <item>
+      <name>disable new tab</name>
+      <only>GOOGLE_CHROME</only>
+      <identifier>private.devisualy.chrome.disable_new_tab</identifier>
+      <autogen>__KeyToKey__ , KeyCode::T, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+    </item>
+    <item>
       <name>move tab</name>
       <only>GOOGLE_CHROME</only>
       <identifier>private.devisualy.chrome.move_tab</identifier>
@@ -23,17 +29,10 @@
       <autogen>__KeyToKey__ , KeyCode::L, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::SHIFT_L</autogen>
     </item>
     <item>
-      <name>move page</name>
+      <name>restore history</name>
       <only>GOOGLE_CHROME</only>
-      <identifier>private.devisualy.chrome.move_page</identifier>
-      <autogen>__KeyToKey__ , KeyCode::J, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN, ModifierFlag::FN</autogen>
-      <autogen>__KeyToKey__ , KeyCode::K, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP, ModifierFlag::FN</autogen>
-    </item>
-    <item>
-      <name>focus addressbar</name>
-      <only>GOOGLE_CHROME</only>
-      <identifier>private.devisualy.chrome.focus_addressbar</identifier>
-      <autogen>__KeyToKey__ , KeyCode::U, ModifierFlag::CONTROL_L, KeyCode::L, ModifierFlag::COMMAND_L</autogen>
+      <identifier>private.devisualy.chrome.restore_history</identifier>
+      <autogen>__KeyToKey__ , KeyCode::U, ModifierFlag::CONTROL_L, KeyCode::T, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
     </item>
   </item>
 </root>
