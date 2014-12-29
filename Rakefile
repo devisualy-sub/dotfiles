@@ -24,8 +24,8 @@ end
 
 desc 'create symlinks on subl'
 task :create_symlinks_on_subl do
-    sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.subl/User/ $HOME/Library/Application\\ Support/Sublime\\ Text\\ 2/Packages/User"
-    sh "ln -sf \"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl\" ~/bin/subl"
+  sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.subl/User/ $HOME/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/User"
+  sh "ln -sf \"/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl\" ~/bin/subl"
 end
 
 desc 'vimperator'
