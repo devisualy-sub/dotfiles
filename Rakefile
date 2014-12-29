@@ -1,7 +1,7 @@
 
 desc 'all'
 task :all => [:create_directories_on_home, :create_symlinks_on_home,
-  :create_symlinks_on_subl, :vimperator, :karabiner]
+  :create_symlinks_on_subl, :karabiner]
 
 CURRENT_DIRECTORY = Dir.getwd
 
@@ -24,13 +24,8 @@ end
 
 desc 'create symlinks on subl'
 task :create_symlinks_on_subl do
-  sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.subl/User/ $HOME/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/User"
-  sh "ln -sf \"/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl\" ~/bin/subl"
-end
-
-desc 'vimperator'
-task :vimperator do
-  sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.vimperator/colors/ $HOME/.vimperator/colors"
+  sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.sublimetext $HOME/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/User/Preferences.sublime-settings"
+  sh "/bin/ln -sf \"/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl\" ~/bin/subl"
 end
 
 desc 'karabiner'
