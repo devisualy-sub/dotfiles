@@ -1,7 +1,7 @@
 
-desc 'all'
-task :all => [:create_directories_on_home, :create_symlinks_on_home,
-  :create_symlinks_on_subl, :karabiner]
+desc 'default'
+task :default => [:create_directories_on_home, :create_symlinks_on_home,
+  :create_symlinks_on_subl, :karabiner, :bash]
 
 CURRENT_DIRECTORY = Dir.getwd
 
@@ -15,7 +15,7 @@ end
 
 desc 'create symlinks on home'
 task :create_symlinks_on_home do
-  dotfiles = ['.bashrc', '.gitconfig', '.vimperatorrc', '.vimrc']
+  dotfiles = ['.gitconfig', '.vimperatorrc', '.vimrc']
   dotfiles.each do |dotfile|
     path = File.join(CURRENT_DIRECTORY, dotfile)
     sh "/bin/ln -sf #{path} $HOME/"
@@ -31,4 +31,10 @@ end
 desc 'karabiner'
 task :karabiner do
   sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.karabiner/private.xml $HOME/Library/Application\\ Support/Karabiner/private.xml"
+end
+
+desc 'bash'
+task :bash do
+  sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.bashrc $HOME/"
+  sh "touch $HOME/.bash_galapagos"
 end

@@ -41,3 +41,7 @@ shopt -s histappend
 #
 clear
 
+#
+# galapagos
+#
+source ~/.bash_galapagos
