@@ -15,7 +15,7 @@ end
 
 desc 'create symlinks on home'
 task :create_symlinks_on_home do
-  dotfiles = ['.gitconfig', '.vimperatorrc', '.vimrc']
+  dotfiles = ['.gitconfig', '.vimrc']
   dotfiles.each do |dotfile|
     path = File.join(CURRENT_DIRECTORY, dotfile)
     sh "/bin/ln -sf #{path} $HOME/"
