@@ -7,7 +7,7 @@ CURRENT_DIRECTORY = Dir.getwd
 
 desc 'create directories on home'
 task :create_directories_on_home do
-  directories = ['bin']
+  directories = ['bin', '.golang']
   directories.each do |directory|
     sh "/bin/mkdir -p $HOME/#{directory}"
   end

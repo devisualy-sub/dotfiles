@@ -26,6 +26,11 @@ source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
 eval "$(rbenv init -)"
 
 #
+# golang
+#
+GOPATH=$HOME/.golang
+
+#
 # prompt
 #
 GIT_PS1_SHOWDIRTYSTATE=true
