@@ -18,8 +18,8 @@
       <name>move tab</name>
       <only>GOOGLE_CHROME</only>
       <identifier>private.devisualy.chrome.move_tab</identifier>
-      <autogen>__KeyToKey__ , KeyCode::I, ModifierFlag::CONTROL_L, KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ , KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ , KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ , KeyCode::P, ModifierFlag::CONTROL_L, KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
     </item>
     <item>
       <name>move history</name>

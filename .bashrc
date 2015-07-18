@@ -28,7 +28,7 @@ eval "$(rbenv init -)"
 #
 # golang
 #
-GOPATH=$HOME/.golang
+export GOPATH=$HOME/.golang
 
 #
 # prompt
