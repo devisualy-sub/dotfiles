@@ -24,7 +24,8 @@ end
 
 desc 'create symlinks on subl'
 task :create_symlinks_on_subl do
-  sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.sublimetext $HOME/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/User/Preferences.sublime-settings"
+  sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.sublimetext/Preferences.sublime-settings $HOME/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/User/Preferences.sublime-settings"
+  sh "/bin/ln -sf #{CURRENT_DIRECTORY}/.sublimetext/Default\\ \\(OSX\\).sublime-keymap $HOME/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/User/Default\\ \\(OSX\\).sublime-keymap"
   sh "/bin/ln -sf \"/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl\" ~/bin/subl"
 end
 
