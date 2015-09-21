@@ -15,18 +15,20 @@
       <autogen>__KeyToKey__ , KeyCode::U, ModifierFlag::CONTROL_L, KeyCode::L, ModifierFlag::COMMAND_L</autogen>
     </item>
     <item>
-      <name>move tab</name>
-      <only>GOOGLE_CHROME</only>
-      <identifier>private.devisualy.chrome.move_tab</identifier>
-      <autogen>__KeyToKey__ , KeyCode::I, ModifierFlag::CONTROL_L, KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ , KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
-    </item>
-    <item>
       <name>move history</name>
       <only>GOOGLE_CHROME</only>
       <identifier>private.devisualy.chrome.move_history</identifier>
       <autogen>__KeyToKey__ , KeyCode::H, ModifierFlag::CONTROL_L, KeyCode::DELETE</autogen>
       <autogen>__KeyToKey__ , KeyCode::L, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::SHIFT_L</autogen>
+    </item>
+  </item>
+  <item>
+    <name>Devisualy Common</name>
+    <item>
+      <name>move tab</name>
+      <identifier>private.devisualy.chrome.move_tab</identifier>
+      <autogen>__KeyToKey__ , KeyCode::I, ModifierFlag::CONTROL_L, KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ , KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
     </item>
   </item>
 </root>
