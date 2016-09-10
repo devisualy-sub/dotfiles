@@ -1,4 +1,0 @@
-[
-  { "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-  { "keys": ["super+space"], "command": "code_intel_auto_complete" },
-]
